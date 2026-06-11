@@ -8,7 +8,7 @@
     <meta name="author" content="Carolina, @carolinasouza______">
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="stylesheet" href="../css/estilo.css">
-    <title>Desafio 01 de JS</title>
+    <title>Desafio 2 de JS</title>
 </head>
 <body>
     <h1>Integrando os recursos de interatividade do JS <mark>COMIFRM</mark></h1>
@@ -30,10 +30,9 @@
             window.confirm = ("Então vamos subtrair")
             resultado = (numero - numero2)
             console.log("O resultado da sua subtração é: " +resultado)
-       
+        
         }        
-            window.alert("O resultado da sua operação é: " +resultado)
-            window.alert("obrigado por jogar comigo! ");
+        document.getElementById("resultado-tela").innerText ="O resoltado é" +resultado
     </script>
     
     
