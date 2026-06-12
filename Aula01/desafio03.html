@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma página modelo">
+    <meta name="keywords" content="sites, web, desenvolvimento backend">
+    <meta name="author" content="Carolina, @carolinasouza______">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Desafio 3 de JS</title>
+</head>
+<body>
+<h1>Integrando os recursos de interatividade do JS <mark>COMIFRM</mark></h1>
+<script>
+let numero = parseFloat(prompt("Digite o primeiro número:"));
+let numero2 = parseFloat(prompt("Digite o segundo número:"));
+let resultado;
+
+let querSomar = confirm("Deseja somar?");
+let querSubtrair = confirm("Deseja subtrair?");
+let querMultiplicar = confirm("Deseja multiplicar?");
+
+if (querSomar == true) {
+    resultado = (numero + numero2);
+    console.log("o resultado da sua soma é : " + resultado);
+} 
+else if (querSubtrair == true) {
+    alert("Então vamos subtrair");
+    resultado = (numero - numero2);
+    console.log("O resultado da sua subtração é: " + resultado);
+} 
+else if (querMultiplicar == true) {
+    alert("Então vamos multiplicar");
+    resultado = (numero * numero2);
+    console.log("O resultado da sua multiplicação é: " + resultado);
+} 
+else {
+    alert("Então vamos dividir");
+    resultado = (numero / numero2);
+    console.log("O resultado da sua divisão é: " + resultado);
+}
+
+document.getElementById("resultado-tela").innerText = "O resultado é " + resultado;
+</script>
+</body>
+</html>
