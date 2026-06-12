@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma página modelo">
+    <meta name="keywords" content="sites, web, desenvolvimento backend">
+    <meta name="author" content="Carolina, @carolinasouza______">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Desafio 2 de JS</title>
+</head>
+<body>
+    <h1>Integrando os recursos de interatividade do JS <mark>COMIFRM</mark></h1>
+<script>
+
+
+let peso = parseFloat(prompt("Digite o seu peso (em kg):"));
+let altura = parseFloat(prompt("Digite a sua altura (em metros, ex: 1.75):"));
+let imc = peso / (altura * altura);
+
+if (imc < 18.5) {
+    alert("Seu IMC é " + imc + ". Classificação: Abaixo do peso");
+    console.log("Abaixo do peso");
+} 
+else if (imc >= 18.5 && imc < 25) {
+    alert("Seu IMC é " + imc + ". Classificação: Peso normal");
+    console.log("Peso normal");
+} 
+else if (imc >= 25 && imc < 30) {
+    alert("Seu IMC é " + imc + ". Classificação: Sobrepeso");
+    console.log("Sobrepeso");
+} 
+else {
+    alert("Seu IMC é " + imc + ". Classificação: Obesidade");
+    console.log("Obesidade");
+}
+
+document.getElementById("resultado-tela").innerText = "Seu IMC é " + imc;
+</script>
+
+</body>
+</html>
